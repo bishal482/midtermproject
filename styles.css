@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+
+header ul li a {
+    color: #812f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('https://www.aurumbureau.com/wp-content/uploads/2019/12/vlad-tchompalov-jwyO3NhPZKQ-unsplash-1-1024x683.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e6e3e3f1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #7e5959;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-section, .brands-section, .contact-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.brand1 {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #b36767;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a55c5c;
+}
+
+form button {
+    background-color: #007bff;
+    color: #803f3f;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+/*about the about us*/
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .about-section, .brands-section, .contact-section {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/*about the product page*/
+.brands-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.brand {
+    margin-bottom: 2rem;
+}
+
+.brand-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.brand h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.brand p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* contact page*/
+.contact-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    text-align: left;
+}
